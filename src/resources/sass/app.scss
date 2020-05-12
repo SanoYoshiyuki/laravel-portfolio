@@ -1,7 +1,13 @@
 //
-$main-color: #3e1bdb;
+$main-color: #e6f4fd;
+$sub-color1: #81969c;
+$sub-color2: #3e1bdb;
+$s: 1;
 $w: 10;
 $i: 10%;
+$rem: 1rem;
+$main-width: 960px;
+$max-width: 768px;
 
 html {
     font-family: Helvetica, sans-serif;
@@ -21,17 +27,52 @@ html {
 a {
     text-decoration: none;
 }
+h1, h2, h3, h4, h5, p, span {
+    max-width: $max-width;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
 .flex {
     display: flex;
+}
+.inline-block {
+    display: inline-block;
 }
 .flex-center {
     align-items: center;
 }
+.flex-column {
+    flex-direction: column;
+}
+.fiexd {
+    position: fixed;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.justify-content {
+    justify-content: center;
+}
 .content {
-    display: flex;
     flex-flow: column;
     margin: 0 auto;
     min-height: 100vh;
+}
+.main-width {
+    width: $main-width;
+}
+.hero {
+    margin: 0 auto;
 }
 @while $w <= 100 {
     .w-#{$w} {
@@ -40,16 +81,89 @@ a {
     $i: $i + 10%;
     $w: $w + 10;
 }
+.m-0 {
+    margin: 0;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.ml-0 {
+    margin-left: 0;
+}
+.mr-0 {
+    margin-right: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+@while  $s <= 5 {
+    .m-#{$s} {
+        margin: $rem;
+    }
+    .mt-#{$s} {
+        margin-top: $rem;
+    }
+    .ml-#{$s} {
+        margin-left: $rem;
+    }
+    .mr-#{$s} {
+        margin-right: $rem;
+    }
+    .mb-#{$s} {
+        margin-bottom: $rem;
+    }
+    $s: $s + 1;
+    $rem: $rem + 1rem;
+}
+.p-0 {
+    padding: 0;
+}
+.pt-0 {
+    padding-top: 0;
+}
+.pl-0 {
+    padding-left: 0;
+}
+.pr-0 {
+    padding-right: 0;
+}
+.pb-0 {
+    padding-bottom: 0;
+}
+@while  $s <= 5 {
+    .p-#{$s} {
+        padding: $rem;
+    }
+    .pt-#{$s} {
+        padding-top: $rem;
+    }
+    .pl-#{$s} {
+        padding-left: $rem;
+    }
+    .pr-#{$s} {
+        padding-right: $rem;
+    }
+    .pb-#{$s} {
+        padding-bottom: $rem;
+    }
+    $s: $s + 1;
+    $rem: $rem + 1rem;
+}
 // nav bar
 #headerNav {
-    background-color: $main-color;
-    padding: 1.5rem;
+    background-color: $sub-color1;
+    padding: 1.8rem;
+    top: 0;
+    left: 0;
+    z-index: 9999;
     a img {
         height: 2.145rem;
     }
 }
-.test-title {
-    p {
-        color: blue;
+
+// upparContent
+#upparContent {
+    #topVideo {
+
     }
 }
