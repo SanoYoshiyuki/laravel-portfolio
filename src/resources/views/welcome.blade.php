@@ -20,18 +20,23 @@
                 </div>
             </nav>
             <div id="upparContent">
-                <div>
+                <div id="topContent">
                     <video autoplay muted loop id="topVideo" class="fiexd">
                         <source src="{{ asset('/video/card-flipping-desktop.mp4') }}" type="video/mp4">
                     </video>
-                    <div class="relative center">
-                        <div class="flex flex-column flex-center main-width hero">
-                            <img src="{{ asset('/images/logo_stellargo-white.svg') }}">
-                            <h1>Global Financial Services</h1>
-                            <p>The Stellargo ecosystem provides users with a basic function that allows them to have their own bank accounts and cryptocurrency wallets within their individual app. It also stores legal currencies and cryptocurrencies and provides the ability to use legal currencies and cryptocurrencies in different payments in one app. For example,</p>
+                    <div id="titleContent" class="relative center">
+                        <div class="flex flex-column flex-center main-width hero justify-content">
+                            <img src="{{ asset('/images/logo_stellargo-white.svg') }}" class="w-30">
+                            <h1 class="tc-a0d5e6">Global Financial Services</h1>
+                            <p class="tc-white">The Stellargo ecosystem provides users with a basic function that allows them to have their own bank accounts and cryptocurrency wallets within their individual app. It also stores legal currencies and cryptocurrencies and provides the ability to use legal currencies and cryptocurrencies in different payments in one app. For example,</p>
                         </div>
                     </div>
                 </div>
+                <section class="relative center bc-81969c">
+                    <div class="main-width center hero">
+                        <h1 class="hero tc-white">Enjoy the best features in <span class="tc-a0d5e6">one experience</span></h1>
+                    </div>
+                </section>
             </div>
         </div>
     </body>
