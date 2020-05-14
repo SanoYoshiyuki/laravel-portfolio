@@ -65,3 +65,11 @@ Error response from daemon: Dockerfile parse error line 7: unknown instruction: 
 RUN apt-get update && apt-get install -y git zip unzip vim
 RUN apt-get update && apt-get install -y libpq-dev && docker-php-ext-install pdo_mysql pdo_pgsql
 ```
+
+js fileがcompileできない。
+
+#対処法
+laravelのversionが7.x以降は yarn run devでvue-template-compilerというライブラリに依存しているので
+```
+yarn add vue-template-compiler --dev --production=false
+```
