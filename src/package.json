@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "dev": "npm run development",
+        "dev": "yarn run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
         "watch-poll": "npm run watch -- --watch-poll",
@@ -16,12 +16,13 @@
         "lodash": "^4.17.13",
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.15.2",
-        "sass-loader": "^8.0.0"
+        "sass-loader": "^8.0.0",
+        "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
         "gsap": "^3.2.6",
+        "laravel-mix-scrollmagic-gsap": "^0.1.1",
         "scrollmagic": "^2.0.7",
-        "scrollmagic-plugin-gsap": "^1.0.4",
-        "vue": "^2.6.11"
+        "scrollmagic-plugin-gsap": "^1.0.4"
     }
 }
