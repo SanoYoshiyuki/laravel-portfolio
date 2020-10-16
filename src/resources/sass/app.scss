@@ -28,6 +28,9 @@ html {
 a {
     text-decoration: none;
 }
+ul {
+    list-style: none;
+}
 h1, h2, h3, h4, h5, p, span {
     max-width: $max-width;
 }
@@ -39,6 +42,10 @@ h1, h2, h3, h4, h5, p, span {
 }
 .left {
     text-align: left;
+}
+.rf-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 .flex {
     display: flex;
@@ -192,9 +199,45 @@ h1, h2, h3, h4, h5, p, span {
 .bc-a0d5e6 {
     background-color: $sub-color3;
 }
+
+// line hight
+.line-1 {
+    line-height: 1;
+}
+.line-11 {
+    line-height: 1.1;
+}
+.line-12 {
+    line-height: 1.2;
+}
+.line-13 {
+    line-height: 1.3;
+}
+.line-14 {
+    line-height: 1.4;
+}
+.line-15 {
+    line-height: 1.5;
+}
+.line-16 {
+    line-height: 1.6;
+}
+.line-17 {
+    line-height: 1.7;
+}
+.line-18 {
+    line-height: 1.8;
+}
+.line-19 {
+    line-height: 1.9;
+}
+.line-2 {
+    line-height: 2;
+}
+
 // nav bar
 #headerNav {
-    background-color: $sub-color1;
+    background-color: darkkhaki;
     padding: 1.8rem;
     top: 0;
     left: 0;
@@ -202,22 +245,112 @@ h1, h2, h3, h4, h5, p, span {
     a img {
         height: 2.145rem;
     }
+    .l-header_menu {
+        display: flex;
+        justify-content: center;
+        width: calc(100% - 500px);
+        .l-header_menu_item  {
+            a {
+                padding: 10px 25px;
+                font-size: 1rem;
+                color: white;
+            }
+        }
+    }
+    .l-header_menu_sub {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        .l-header_menu_sub_item  {
+            a {
+                padding: 10px 20px;
+                font-size: 12px;
+                color: white;
+            }
+            a::after {
+                content: '';
+                width: 1px;
+                height: 16px;
+                top: 2px;
+                right: 0;
+                position: absolute;
+                background-color: white;
+            }
+        }
+    }
+}
+
+//loginContent
+#loginContent {
+    min-height: 100vh;
+    background-image: url('../images/trot-bc.jpg');
+    background-size: cover;
+    #loginFormContent {
+        width: 450px;
+        margin-top: 50px;
+        padding: 20px 40px;
+        background: rgba(0, 0, 0, 0.2);
+        form div {
+            padding: 5px;
+            input {
+                width: 100%;
+                height: auto;
+                padding: 12px;
+                border: none;
+                outline: none;
+            }
+            #loginButton {
+                background-color: darkkhaki;
+                color: white;
+            }
+        }
+        a {
+            color: white;
+        }
+    }
+}
+
+@keyframes rotate_anime {
+    0% {
+        -webkit-transform: rotateY(0deg) rotateZ(20deg) translate(0px, 50px);
+        -ms-transform: rotateY(0deg) rotateZ(20deg) translate(0px, 50px);
+        -moz-transform: rotateY(0deg) rotateZ(20deg) translate(0px, 50px);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg) rotateZ(20deg) translate(0px, 50px);
+        -ms-transform: rotateY(360deg) rotateZ(20deg) translate(0px, 50px);
+        -moz-transform: rotateY(360deg) rotateZ(20deg) translate(0px, 50px);
+    }
 }
 
 // upparContent
 #upparContent {
     #topContent {
         min-height: 100vh;
-        video {
-            object-fit: cover;
-            background-size: cover;
-            width: 100%;
-        }
+        background-image: url('../images/trot-bc.jpg');
+        background-size: cover;
         #titleContent {
-            top: 50%;
-            left: 50%;
-            transform: translateY(150%) translateX(-50%);
-            -webkit-transform: translateY(150%) translateX(-50%);
+            text-align: center;
+            margin: 0 auto;
+            padding: 100px 50px;
+            #titleMsg {
+                text-align: left;
+                p {
+                    width: 70%;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 15px;
+                }
+            }
+            #titleImg {
+                animation: rotate_anime 6s infinite;
+            }
         }
     }
 }
+
+#ticketContent {
+    min-height: 100vh;
+    background-image: url('../images/trot-bc.jpg');
+    background-size: cover;
+}
+

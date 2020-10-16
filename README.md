@@ -76,3 +76,44 @@ docker-compose exec app bash
 cd src
 yarn add vue-template-compiler --dev --production=false
 ```
+
+##開発用コマンドメモ
+models
+```
+#models作成
+php artisan make:model models/{ファイル名}
+
+#データベースマイグレーションも同時にする場合
+php artisan make:model models/{ファイル名} --migration
+```
+
+maigration
+```
+#maigraion作成
+php artisan make:migration {ファイル名}
+
+#maigration実行
+php artisan migrate
+
+#テーブル削除
+php artisan migrate:fresh
+```
+
+seed
+```
+#seed作成
+php artisan make:seeder {ファイル名}
+
+#seed実行
+composer dump-autoload
+php artisan db:seed
+
+#maigrate再実行
+php artisan migrate:fresh --seed
+```
+
+controller
+```
+#controller作成
+php artisan make:controller {ファイル名}
+```

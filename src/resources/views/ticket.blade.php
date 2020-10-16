@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>TOP</title>
+        <title>TICKET</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -29,18 +29,7 @@
                     </ul>
                 </div>
             </nav>
-            <div id="upparContent">
-                <div id="topContent" class="">
-                    <div id="titleContent" class="">
-                        <div id="titleMsg" class="flex flex-column hero justify-content inline-block">
-                            <img src="{{ asset('/images/logo_stellargo-white.svg') }}" class="w-30">
-                            <p class="tc-white line-2 mt-2">毎日抽選時間の14:00～17:00はシステムロックをします。その際、通常とは異なる表示になっているため、その時間をはずしてログインをお願いします。</p>
-                        </div>
-                        <div class="inline-block mt-2">
-                            <img id="titleImg" src="{{ asset('/images/t013c.jpg') }}">
-                        </div>
-                    </div>
-                </div>
+            <div id="ticketContent">
             </div>
         </div>
     </body>
