@@ -32,13 +32,15 @@
             <div id="upparContent">
                 <div id="topContent" class="">
                     <div id="titleContent" class="">
-                        <div id="titleMsg" class="flex flex-column hero justify-content inline-block">
-                            <img src="{{ asset('/images/logo_stellargo-white.svg') }}" class="w-30">
-                            <p class="tc-white line-2 mt-2">毎日抽選時間の14:00～17:00はシステムロックをします。その際、通常とは異なる表示になっているため、その時間をはずしてログインをお願いします。</p>
-                        </div>
-                        <div class="inline-block mt-2">
+                        <span class="inner_content hero">
+                            <span id="titleMsg" class="hero">
+                                <p class="tc-white line-12 hero subject">EXCUCIFARMはマッチングのプラットフォームです。</p>
+                                <p class="tc-white line-12 hero mt-1">EXCUCIFRAMは個人間取引をさぽーとします。</p>
+                            </span>
+                        </span>
+                        <!-- <div class="inline-block mt-2">
                             <img id="titleImg" src="{{ asset('/images/t013c.jpg') }}">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

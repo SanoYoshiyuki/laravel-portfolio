@@ -237,8 +237,8 @@ h1, h2, h3, h4, h5, p, span {
 
 // nav bar
 #headerNav {
-    background-color: darkkhaki;
-    padding: 1.8rem;
+    background: rgba(138, 43, 226, 0.3);
+    padding: 1.5rem;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -263,18 +263,14 @@ h1, h2, h3, h4, h5, p, span {
         justify-content: flex-end;
         .l-header_menu_sub_item  {
             a {
-                padding: 10px 20px;
+                padding: 10px 10px;
                 font-size: 12px;
                 color: white;
             }
             a::after {
-                content: '';
-                width: 1px;
-                height: 16px;
-                top: 2px;
-                right: 0;
-                position: absolute;
-                background-color: white;
+                content: '|';
+                color: white;
+                padding: 0 0 0 8px;
             }
         }
     }
@@ -283,29 +279,56 @@ h1, h2, h3, h4, h5, p, span {
 //loginContent
 #loginContent {
     min-height: 100vh;
-    background-image: url('../images/trot-bc.jpg');
+    background-image: url('../images/bg2.jpg');
     background-size: cover;
-    #loginFormContent {
-        width: 450px;
-        margin-top: 50px;
-        padding: 20px 40px;
-        background: rgba(0, 0, 0, 0.2);
-        form div {
-            padding: 5px;
-            input {
-                width: 100%;
-                height: auto;
-                padding: 12px;
-                border: none;
-                outline: none;
+    .login_inner_content {
+        max-width: 950px;
+        margin-top: 150px;
+        position: relative;
+        #loginFormContent {
+            margin-right: 300px;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.2);
+            form div {
+                padding: 5px;
+                input {
+                    width: 100%;
+                    height: auto;
+                    padding: 12px;
+                    border: none;
+                    outline: none;
+                }
+                #loginButton {
+                    background-color: purple;
+                    color: white;
+                }
             }
-            #loginButton {
-                background-color: darkkhaki;
+            a {
                 color: white;
             }
         }
-        a {
+        #loginTitle {
+            width: 300px;
+            height: 100%;
+            padding: 20px 40px;
+            background-color: purple;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
             color: white;
+            text-align: left;
+            letter-spacing: -.05em;
+            .login-sidebar-content-title {
+                font-weight: bold;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .login-sidebar-content-item {
+                padding-left: 10px;
+                border-left: 2px solid #3e1bdb;
+                font-size: 12px;
+            }
         }
     }
 }
@@ -327,22 +350,31 @@ h1, h2, h3, h4, h5, p, span {
 #upparContent {
     #topContent {
         min-height: 100vh;
-        background-image: url('../images/trot-bc.jpg');
+        background-image: url('../images/bg1.jpg');
         background-size: cover;
         #titleContent {
             text-align: center;
             margin: 0 auto;
-            padding: 100px 50px;
-            #titleMsg {
-                text-align: left;
-                p {
-                    width: 70%;
-                    background: rgba(0, 0, 0, 0.3);
-                    padding: 15px;
+            max-width: 1000px;
+            height: 100vh;
+            .inner_content {
+                display: table;
+                height: 100%;
+                width: 100%;
+                #titleMsg {
+                    text-align: left;
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-weight: bold;
+                    .subject {
+                        font-size: 38px;
+                        letter-spacing: -.05em;
+                        word-break: keep-all;
+                    }
                 }
-            }
-            #titleImg {
-                animation: rotate_anime 6s infinite;
+                #titleImg {
+                    animation: rotate_anime 6s infinite;
+                }
             }
         }
     }
@@ -350,7 +382,21 @@ h1, h2, h3, h4, h5, p, span {
 
 #ticketContent {
     min-height: 100vh;
-    background-image: url('../images/trot-bc.jpg');
+    background-image: url('../images/bg2.jpg');
     background-size: cover;
+    #ticketInfoContent {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 150px;
+        color: white;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 20px 30px;
+        h2 {
+            margin-bottom: 10px;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+    }
 }
 

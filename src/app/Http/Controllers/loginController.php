@@ -7,21 +7,25 @@ use App\Models\User;
 
 class loginController extends Controller
 {
-    public function index () {
+
+    public function __construct(Request $request)
+    {
+        $this->middleware('guest');
+    }
+
+    public function index ()
+    {
         return view('login');
     }
 
-    public function Auth (Request $request)
+    public function auth (Request $request)
     {
-
         $user = $request->input('user');
         $password = $request->input('password');
 
-        logger($user);
-        logger($password);
-
         if (User::where('user', '=', $user)->exists()) {
-            return redirect('/');
+            session(['user' => $user]);
+            return redirect('/home');
         } else {
             return redirect('login');
         }
