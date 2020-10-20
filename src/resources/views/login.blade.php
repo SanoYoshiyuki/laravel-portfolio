@@ -30,7 +30,7 @@
                             </div>
                         </form>
                         <div class="right w-90 rf-auto mt-1">
-                            <a href="#">新規登録</a>
+                            <a href="/register">新規登録</a>
                         </div>
                     </div>
                     <div id="loginTitle">

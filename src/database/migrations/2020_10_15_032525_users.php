@@ -22,7 +22,7 @@ class Users extends Migration
             $table->integer('affiliate_id');
             $table->integer('pin');
             $table->string('bank');
-            $table->integer('bank_accunt_number');
+            $table->integer('bank_account_number');
             $table->string('bank_deposit_type');
             $table->string('bank_branch');
             $table->timestamps();

@@ -17,8 +17,17 @@ Route::get('/', function () {
     return redirect('login');
 });
 
+Route::get('/register', 'registerController@index');
+Route::get('/register/infomation', 'registerController@infomation');
+Route::post('/register', 'registerController@register');
+
 Route::get('/login', 'loginController@index');
 Route::post('/login', 'loginController@auth');
+
 Route::get('/logout', 'homeController@logout');
+
 Route::get('/home', 'homeController@index');
+
 Route::get('/ticket', 'ticketController@index');
+
+Route::get('/lottery', 'lotteryController@index');
