@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Ticket;
 
 class lotteryController extends Controller
 {
@@ -11,8 +12,15 @@ class lotteryController extends Controller
         $this->middleware('verify');
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        return view('lottery');
+        $ticket = Ticket::select('ticket')->where('user_id', $request->session()->get('user_id'))->get();
+        $user = $request->session()->get('user');
+        $ticket = $ticket[0]['ticket'];
+
+        return view('lottery')->with([
+            'user' => $user,
+            'ticket' => $ticket
+        ]);
     }
 }

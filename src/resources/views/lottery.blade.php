@@ -17,9 +17,9 @@
                 <h2>抽選申込</h2>
                 <div class="lottery_content">
                     <div class="my_infomation">
-                        <h3>wwwwwww</h3>
+                        <h3>{{ $user }}</h3>
                         <p>予約するにはスターチケットが必要です。</p>
-                        <p>スターチケット: <span>20</span></p>
+                        <p>スターチケット: <span>{{ $ticket }}</span></p>
                     </div>
                     <div class="card_list">
                         <div class="card_item">

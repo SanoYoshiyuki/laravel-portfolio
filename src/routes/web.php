@@ -31,3 +31,5 @@ Route::get('/home', 'homeController@index');
 Route::get('/ticket', 'ticketController@index');
 
 Route::get('/lottery', 'lotteryController@index');
+
+Route::get('/mypage', 'myPageController@index');
