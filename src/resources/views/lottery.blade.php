@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>LOTTERY</title>
 
         <!-- Fonts -->
@@ -34,7 +34,7 @@
                                     <span>スターチケット数量</span>
                                     20EA
                                 </p>
-                                <button>
+                                <button id="" onclick="lottery(1, 20)">
                                     予約
                                 </button>
                             </div>
@@ -51,7 +51,7 @@
                                     <span>スターチケット数量</span>
                                     20EA
                                 </p>
-                                <button>
+                                <button id="">
                                     予約
                                 </button>
                             </div>
@@ -68,7 +68,7 @@
                                     <span>スターチケット数量</span>
                                     20EA
                                 </p>
-                                <button>
+                                <button id="">
                                     予約
                                 </button>
                             </div>
@@ -85,7 +85,7 @@
                                     <span>スターチケット数量</span>
                                     20EA
                                 </p>
-                                <button>
+                                <button id="">
                                     予約
                                 </button>
                             </div>
@@ -94,5 +94,11 @@
                 </div>
             </div>
         </div>
+        <script>
+            window.Lottery = {};
+            window.Lottery.user = "{{$user}}";
+            window.Lottery.ticket = "{{$ticket}}";
+        </script>
+        <script src="{{ asset('js/lottery.js') }}"></script>
     </body>
 </html>

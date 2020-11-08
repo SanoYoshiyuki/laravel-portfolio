@@ -34,13 +34,9 @@ class registerController extends Controller
             'email' => $request->input('email'),
             'user' => $request->input('user'),
             'password' => Hash::make($request->input('password')),
-            'tel' => $request->input('tel'),
             'affiliate_id' => $affiliate[0]['id'],
-            'pin' => $request->input('pin'),
-            'bank' => $request->input('bank'),
-            'bank_account_number' => $request->input('bank_account_number'),
-            'bank_deposit_type' => $request->input('bank_deposit_type'),
-            'bank_branch' => $request->input('bank_branch')
+            'eth_address' => $request->input('eth_address'),
+            'status' => 0,
         ])->save();
 
         $user = $UserTable::where('user', $request->input('user'))->get();

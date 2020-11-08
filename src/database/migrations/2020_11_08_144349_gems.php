@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Users extends Migration
+class Gems extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class Users extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('gems', function (Blueprint $table) {
             $table->id()->autoIncrement();
-            $table->string('email', 191)->unique();
-            $table->string('user', 191)->unique();
-            $table->string('password');
-            $table->integer('affiliate_id');
-            $table->string('eth_address');
-            $table->integer('status');
+            $table->string('gem', 30);
+            $table->integer('holding_reriod');
+            $table->float('interest_rate');
+            $table->integer('low_price');
+            $table->integer('high_price');
+            $table->integer('fee');
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ class Users extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('gems');
     }
 }

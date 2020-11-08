@@ -4,7 +4,6 @@ namespace App\Models;
 
 use App\models\Ticket;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
 
 class User extends Model
 {
@@ -13,16 +12,16 @@ class User extends Model
         'email',
         'user',
         'password',
-        'tel',
         'affiliate_id',
-        'pin',
-        'bank',
-        'bank_account_number',
-        'bank_deposit_type',
-        'bank_branch'
+        'eth_address',
+        'status'
     ];
 
     public function ticket() {
         return $this->hasMany(Ticket::class, 'user_id', 'id');
+    }
+
+    public function lottery_reservation() {
+        return $this->hasMany(LotteryReservation::class, 'user_id', 'id');
     }
 }

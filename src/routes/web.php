@@ -31,5 +31,8 @@ Route::get('/home', 'homeController@index');
 Route::get('/ticket', 'ticketController@index');
 
 Route::get('/lottery', 'lotteryController@index');
+Route::post('/lottery', 'lotteryController@lottery');
+
+Route::get('/transaction', 'transactionController@index');
 
 Route::get('/mypage', 'myPageController@index');

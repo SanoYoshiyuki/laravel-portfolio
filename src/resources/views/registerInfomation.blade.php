@@ -29,31 +29,13 @@
                                 <input type="password" name="password_confirm" placeholder="パスワード確認用(英数字記号)">
                             </div>
                             <div class="w-90 rf-auto mt-1">
-                                <input type="text" name="user_kana" placeholder="氏名(カナ入力のみ)">
-                            </div>
-                            <div class="w-90 rf-auto mt-1">
-                                <input type="number" name="tel" placeholder="連絡先電話番号(数字入力のみ)">
-                            </div>
-                            <div class="w-90 rf-auto mt-1">
                                 <input type="email" name="email" placeholder="メールアドレス(重複なし)">
                             </div>
                             <div class="w-90 rf-auto mt-1">
                                 <input type="text" name="affiliate_user" placeholder="紹介者(英数字入力)">
                             </div>
                             <div class="w-90 rf-auto mt-1">
-                                <input type="number" name="pin" placeholder="PIN NUMBER(数字入力、４桁)">
-                            </div>
-                            <div class="w-90 rf-auto mt-1">
-                                <input type="text" name="bank" placeholder="銀行名">
-                            </div>
-                            <div class="w-90 rf-auto mt-1">
-                                <input type="number" name="bank_account_number" placeholder="口座番号(数字入力)">
-                            </div>
-                            <div class="w-90 rf-auto mt-1">
-                                <input type="text" name="bank_deposit_type" placeholder="口座種別(普通、当座、貯蓄 など)">
-                            </div>
-                            <div class="w-90 rf-auto mt-1">
-                                <input type="text" name="bank_branch" placeholder="支店名">
+                                <input type="text" name="eth_address" placeholder="ETH ADDRESS">
                             </div>
 
                             <div class="w-90 rf-auto mt-1">
