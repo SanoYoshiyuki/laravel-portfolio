@@ -17,9 +17,9 @@
                 <div id="ticketInfoContent">
                     <h2>{{ $user }}</h2>
                     <h3>チケット数 {{ $ticket }}</h3>
-                    <p>チケット購入枚数 1チケット11円</p>
-                    <p>最低購入枚数 300チケット 3300円</p>
-                    <p>現金振込 ゆうちょ銀行 店番018 普通8038292 ユーエイチエスワールド</p>
+                    <p>チケット購入枚数 1ticket 0.1USDT</p>
+                    <p>最低購入枚数 500ticket 50USDT</p>
+                    <p>振込先address 0xffffffffffffffffffffffffffffffffffffff</p>
                 </div>
             </div>
         </div>

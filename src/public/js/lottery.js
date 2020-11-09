@@ -3,8 +3,6 @@ function index () {
 }
 
 function lottery (character, fee) {
-    alert(window.Lottery.user)
-
     let f = document.createElement('form');
     f.method = 'post';
     f.action = '/lottery';

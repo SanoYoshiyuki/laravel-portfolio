@@ -34,5 +34,16 @@ Route::get('/lottery', 'lotteryController@index');
 Route::post('/lottery', 'lotteryController@lottery');
 
 Route::get('/transaction', 'transactionController@index');
+Route::post('/cancel', 'transactionController@cancel');
 
 Route::get('/mypage', 'myPageController@index');
+
+
+
+Route::get('/admin/login', 'admin\adminUserController@login');
+Route::post('/admin/login', 'admin\adminUserController@auth');
+
+Route::group(['middleware' => ['auth.admin']], function () {
+    Route::get('/admin', 'admin\adminUserController@index');
+    Route::get('/admin/logout', 'admin\adminUserController@logout');
+});

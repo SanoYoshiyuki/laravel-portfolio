@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5, p, span {
 
 // nav bar
 #headerNav {
-    background: rgba(138, 43, 226, 0.3);
+    // background: rgba(138, 43, 226, 0.3);
     padding: 1.5rem;
     top: 0;
     left: 0;
@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5, p, span {
 //loginContent
 #loginContent {
     min-height: 100vh;
-    background-image: url('../images/bg2.jpg');
+    background-image: url('../images/yozora-bg4.jpg');
     background-size: cover;
     .login_inner_content {
         max-width: 950px;
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, p, span {
 //register content
 #registerContent {
     min-height: 100vh;
-    background-image: url('../images/bg2.jpg');
+    background-image: url('../images/yozora-bg4.jpg');
     background-size: cover;
     .register_inner_content {
         max-width: 950px;
@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, p, span {
 #upparContent {
     #topContent {
         min-height: 100vh;
-        background-image: url('../images/bg1.jpg');
+        background-image: url('../images/yozora-bg4.jpg');
         background-size: cover;
         #titleContent {
             text-align: center;
@@ -481,7 +481,7 @@ h1, h2, h3, h4, h5, p, span {
 //ticket content
 #ticketContent {
     min-height: 100vh;
-    background-image: url('../images/bg2.jpg');
+    background-image: url('../images/yozora-bg4.jpg');
     background-size: cover;
     #ticketInfoContent {
         width: 80%;
@@ -502,7 +502,7 @@ h1, h2, h3, h4, h5, p, span {
 //lotter content
 #lotteryContent {
     min-height: 100vh;
-    background-image: url('../images/bg1.jpg');
+    background-image: url('../images/yozora-bg4.jpg');
     background-size: cover;
     h2 {
         margin: 0 auto;
@@ -568,7 +568,87 @@ h1, h2, h3, h4, h5, p, span {
                     }
                     button {
                         padding: 10px;
-                        background: #93c5ed;
+                        background: #003366;
+                        color: white;
+                        font-size: 15px;
+                        width: 100%;
+                        border: none;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// transaction content
+#transactionContent {
+    min-height: 100vh;
+    background-image: url('../images/yozora-bg4.jpg');
+    background-size: cover;
+    h2 {
+        margin: 0 auto;
+        margin-top: 120px;
+        color: white;
+        text-align: center;
+    }
+    p {
+        margin-top: 5px;
+    }
+    .transaction_content {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .my_infomation {
+            color: white;
+            padding: 10px;
+            p {
+                font-size: 12px;
+            }
+            span {
+                color: red;
+            }
+        }
+        .transaction_list {
+            margin-top: 20px;
+            .card_item {
+                display: inline-block;
+                width: 270px;
+                padding: 10px;
+                background-color: #f3f3f3;
+                margin-bottom: 10px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .item_info {
+                    text-align: center;
+                    h2 {
+                        width: 210px;
+                        height: 38px;
+                        line-height: 38px;
+                        font-size: 14px;
+                        background: #3d4661;
+                        color: #93c5ed;
+                        border-radius: 20px;
+                        margin: 20px auto 0 auto;
+                    }
+                    .price1 {
+                        font-size: 12px;
+                        padding: 0 5px;
+                        padding-top: 10px;
+                        color: black;
+                        span {
+                            display: block;
+                            color: #93c5ed;
+                            font-weight: 500;
+                        }
+                    }
+                    button {
+                        padding: 10px;
+                        background: crimson;
                         color: white;
                         font-size: 15px;
                         width: 100%;

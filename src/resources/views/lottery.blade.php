@@ -51,7 +51,7 @@
                                     <span>スターチケット数量</span>
                                     20EA
                                 </p>
-                                <button id="">
+                                <button id="" onclick="lottery(2, 40)">
                                     予約
                                 </button>
                             </div>
@@ -68,7 +68,7 @@
                                     <span>スターチケット数量</span>
                                     20EA
                                 </p>
-                                <button id="">
+                                <button id="" onclick="lottery(3, 60)">
                                     予約
                                 </button>
                             </div>
@@ -85,7 +85,7 @@
                                     <span>スターチケット数量</span>
                                     20EA
                                 </p>
-                                <button id="">
+                                <button id="" onclick="lottery(4, 80)">
                                     予約
                                 </button>
                             </div>
